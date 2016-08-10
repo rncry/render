@@ -19,7 +19,7 @@ all: $(TARGET)
 $(TARGET): $(OBJECTS)
 	$(CC) $(LDFLAGS) $(OBJECTS) -o $(TARGET)
 
-$(OBJECTS): 
+$(OBJECTS): test 
 	$(CC) $(CFLAGS) $(SOURCES) -o $@
 
 test:
