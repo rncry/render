@@ -1,4 +1,6 @@
 language: cpp
 
+install: sudo apt-get install libpthread-stubs0-dev
+
 script: make
 
