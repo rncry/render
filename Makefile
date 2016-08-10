@@ -23,7 +23,7 @@ $(OBJECTS): test
 	$(CC) $(CFLAGS) $(SOURCES) -o $@
 
 test:
-	$(CC) -I$(GTESTIDIR) -I$(SRCDIR) -lpthread $(GTESTLDIR)/gtest_main.a $(TESTSOURCES) -o $(TESTDIR)/testrun
+	$(CC) -I$(GTESTIDIR) -I$(SRCDIR) -pthread $(GTESTLDIR)/gtest_main.a $(TESTSOURCES) -o $(TESTDIR)/testrun
 	$(TESTDIR)/testrun 
 
 clean:
