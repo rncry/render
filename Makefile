@@ -3,7 +3,7 @@ CC = g++
 SRCDIR = src
 BUILDDIR = build
 TESTDIR = tests
-GTESTLDIR = googletest/googletest/make
+GTESTLDIR = $(TESTDIR)
 GTESTIDIR = googletest/googletest/include
 TARGET = bin/helloworld
 
